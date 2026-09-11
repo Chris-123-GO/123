@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b1055;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#752261;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9472;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fff4b0" />
+      <stop offset="40%" style="stop-color:#ffcc66" />
+      <stop offset="100%" style="stop-color:#ff9933" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)" />
+
+  <!-- Sun/moon glow -->
+  <circle cx="400" cy="480" r="120" fill="url(#sun)" opacity="0.9" />
+
+  <!-- Distant hills -->
+  <ellipse cx="200" cy="560" rx="250" ry="80" fill="#4a1e5c" opacity="0.6" />
+  <ellipse cx="600" cy="570" rx="300" ry="90" fill="#3a164a" opacity="0.7" />
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="80" cy="80" r="2" />
+    <circle cx="150" cy="40" r="1.5" />
+    <circle cx="250" cy="120" r="2" />
+    <circle cx="320" cy="60" r="1.5" />
+    <circle cx="500" cy="90" r="2" />
+    <circle cx="620" cy="50" r="1.5" />
+    <circle cx="700" cy="110" r="2" />
+    <circle cx="730" cy="40" r="1.5" />
+    <circle cx="450" cy="140" r="1.5" />
+    <circle cx="180" cy="170" r="1" />
+    <circle cx="580" cy="160" r="1" />
+  </g>
+
+  <!-- Couple silhouette (facing each other) -->
+  <g fill="#1a0a2e">
+    <!-- Left person -->
+    <circle cx="350" cy="430" r="20" /> <!-- head -->
+    <path d="M330 450 Q335 500 330 540 L320 570 L350 570 L350 540 Q355 500 370 450 Z" />
+    <!-- Right person -->
+    <circle cx="450" cy="430" r="20" /> <!-- head -->
+    <path d="M470 450 Q465 500 470 540 L480 570 L450 570 L450 540 Q445 500 430 450 Z" />
+  </g>
+
+  <!-- Floating heart above them -->
+  <g transform="translate(400,300) scale(0.8)">
+    <path d="M0 20 C -20 -10, -50 -10, -50 15 C -50 35, -20 55, 0 70 C 20 55, 50 35, 50 15 C 50 -10, 20 -10, 0 20 Z" fill="#ff4d6d" />
+    <!-- shine -->
+    <circle cx="-15" cy="5" r="3" fill="#ffffff" opacity="0.5" />
+  </g>
+
+  <!-- Small hearts around -->
+  <g fill="#ff7a90" opacity="0.7">
+    <circle cx="310" cy="340" r="5" />
+    <circle cx="490" cy="360" r="4" />
+    <circle cx="270" cy="260" r="3" />
+    <circle cx="530" cy="240" r="4" />
+    <circle cx="220" cy="300" r="5" />
+    <circle cx="570" cy="310" r="3" />
+  </g>
+
+  <!-- Ground/water reflection -->
+  <rect x="0" y="560" width="800" height="40" fill="#1a0a2e" opacity="0.5" />
+</svg>
